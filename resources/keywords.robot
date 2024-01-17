@@ -8,6 +8,9 @@ Library                   String
 ${BROWSER}                chrome
 ${login_url}              ${url}           # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}               ${login_url}/lightning/page/home
+${client_id}              3MVG9_MSrVW5eWEml1ZrzWBkwtYpMUPR.7Txa5qdIwcKWtSH6ttPLCrA2Qf2R1Kg8VKju4RE3A4awf4.lq2OJ
+${client_secret}          ECE33C123A23FD2737081C02AC9E89E6BC118E153F998A565DE6A33DBD3F07E3
+
 
 
 *** Keywords ***
@@ -67,36 +70,3 @@ Home
     Run Keyword If        ${login_status}             Login
     ClickText             Home
     VerifyTitle           Home | Salesforce
-
-
-# Example of custom keyword with robot fw syntax
-VerifyStage
-    [Documentation]       Verifies that stage given in ${text} is at ${selected} state; either selected (true) or not selected (false)
-    [Arguments]           ${text}                     ${selected}=true
-    VerifyElement        //a[@title\="${text}" and (@aria-checked\="${selected}" or @aria-selected\="${selected}")]
-
-
-NoData
-    VerifyNoText          ${data}                     timeout=3                        delay=2
-
-
-DeleteAccounts
-    [Documentation]       RunBlock to remove all data until it doesn't exist anymore
-    ClickText             ${data}
-    ClickText             Delete
-    VerifyText            Are you sure you want to delete this account?
-    ClickText             Delete                      2
-    VerifyText            Undo
-    VerifyNoText          Undo
-    ClickText             Accounts                    partial_match=False
-
-
-DeleteLeads
-    [Documentation]       RunBlock to remove all data until it doesn't exist anymore
-    ClickText             ${data}
-    ClickText             Delete
-    VerifyText            Are you sure you want to delete this lead?
-    ClickText             Delete                      2
-    VerifyText            Undo
-    VerifyNoText          Undo
-    ClickText             Leads                    partial_match=False
