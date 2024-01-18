@@ -52,7 +52,7 @@ Login As
 Home
     [Documentation]       Navigate to homepage, login if needed
     GoTo                  ${home_url}
-    ${login_status} =     IsText                      To access this page, you have to log in to Salesforce.    timeout=2s
+    ${login_status} =     IsText                      To access this page, you have to log in to Salesforce.    timeout=5s
     Run Keyword If        ${login_status}             Login
     ClickText             Home
     VerifyTitle           Home | Salesforce
