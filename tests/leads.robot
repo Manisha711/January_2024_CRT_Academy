@@ -66,3 +66,7 @@ Delete lead
     ClickText             Delete                      partial_match=False
     UseModal              Off
     VerifyText            Lead "${first_name} ${last_name}" was deleted.
+
+Show Self Healing
+    GoTo                  https://www.copado.com
+    ClickText             Talk to Sales               timeout=2s
