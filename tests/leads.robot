@@ -25,7 +25,6 @@ Modify A Lead With Faker Data
     [Documentation]             This test script serves the purpose of modifying a lead within Salesforce,
     ...                         utilizing the FakerLibrary to generate and manipulate data dynamically.
     [Tags]                      lead                        Modify
-    ${first_name}               ${last_name}=               Generate Random Lead Names
 
 
 Delete lead via API
