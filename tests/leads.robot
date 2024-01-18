@@ -30,5 +30,3 @@ Modify A Lead With Faker Data
 Delete lead via API
     [Documentation]             This test script is designed for the deletion of a lead within Salesforce.
     [Tags]                      lead                        delete
-    Appstate                    Home
-    LaunchApp                   Leads
