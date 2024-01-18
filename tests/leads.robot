@@ -5,7 +5,6 @@
 Library                         QForce
 Resource                        ../resources/keywords.robot
 Library                         FakerLibrary
-Test Setup                      Home
 Suite Setup                     Setup Browser
 Suite Teardown                  End suite
 
