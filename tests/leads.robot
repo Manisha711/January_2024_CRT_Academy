@@ -27,6 +27,6 @@ Modify A Lead With Faker Data
     [Tags]                      lead                        Modify
 
 
-Delete lead via API
+Delete lead
     [Documentation]             This test script is designed for the deletion of a lead within Salesforce.
     [Tags]                      lead                        delete
