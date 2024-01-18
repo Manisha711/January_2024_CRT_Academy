@@ -27,21 +27,12 @@ Setup Browser
 End suite
     Close All Browsers
 
-
 Login
     [Documentation]       Login to Salesforce instance
     GoTo                        ${login_url}
     TypeText                    Username                    ${username}
     TypeText                    Password                    ${password}
     ClickText                   Log In
-    ${isMFA}=                   IsText                      Verify Your Identity        #Determines MFA is prompted
-    Log To Console              ${isMFA}
-    IF                          ${isMFA}                    #Conditional Statement for if MFA verification is required to proceed
-        ${mfa_code}=            GetOTP                      ${username}                 ${secret}                ${password}
-        TypeSecret              Code                        ${mfa_code}
-        ClickText               Verify
-    END
-
 
 Login As
     [Documentation]       Login As different persona. User needs to be logged into Salesforce with Admin rights
@@ -56,11 +47,6 @@ Login As
     ClickText             User                        anchor=${persona}      delay=5    # wait for list to populate, then click
     VerifyText            Freeze                      timeout=45                        # this is slow, needs longer timeout          
     ClickText             Login                       anchor=Freeze          delay=1      
-
-Fill MFA
-    ${mfa_code}=         GetOTP    ${username}   ${secret}   ${login_url}    
-    TypeSecret           Verification Code       ${mfa_code}      
-    ClickText            Verify 
 
 
 Home
