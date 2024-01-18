@@ -38,7 +38,7 @@ Modify A Lead With Faker Data
     ...                   utilizing the FakerLibrary to generate and manipulate data dynamically.
     [Tags]                lead                        Modify
     Launch App            Leads
-    Click Text            Steven Brown
+    Click Text            Hidde Visser
     Click Text            Show more actions
     Click Text            Edit                        anchor=Change Owner
     Use Modal             On
