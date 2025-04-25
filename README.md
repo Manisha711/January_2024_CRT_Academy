@@ -25,12 +25,10 @@ Variables can be added by hovering on top of your test suite, selecting
 
 Use these automated test cases as a basis to learn and start modifying
 them to suit your specific needs.
-
-
 Additional information
 ----------------------
 
-Directory structure:
+Directory structure:   
 
 * Tests are under "tests" folder
 * Supporting files are under "resources" folder
