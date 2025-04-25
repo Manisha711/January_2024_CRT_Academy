@@ -29,12 +29,9 @@ them to suit your specific needs.
 
 Additional information
 ----------------------
-
 Directory structure:
-
 * Tests are under "tests" folder
 * Supporting files are under "resources" folder
-
 
 Configure Github integration
 Setup for Github can be found [here](https://docs.copado.com/articles/#!copado-robotic-testing-publication/github )
