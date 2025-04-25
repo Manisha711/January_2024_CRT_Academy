@@ -9,7 +9,7 @@ It's meant to be used as a template for Salesforce testing projects.
 Some Salesforce specific keywords are included to make testing easier.
 
 
-Usage
+Usage   
 -----
 * IMPORTANT:
   * Setup MFA with mobile app as instructed [here](https://docs.copado.com/resources/Storage/copado-robotic-testing-publication/CRT%20Site/qwords-reference/current/qwords/_attachments/QForce.html#mfa-setup)
@@ -37,5 +37,4 @@ Directory structure:
 
 
 Configure Github integration
------
 Setup for Github can be found [here](https://docs.copado.com/articles/#!copado-robotic-testing-publication/github )
